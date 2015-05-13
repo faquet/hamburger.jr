@@ -1,0 +1,330 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
+
+
+/*nav*/
+
+.navbar {
+  border-bottom: 2px solid #ddd;
+}
+
+.nav-header {
+	background: #329932;
+	color: #fff;
+	padding-top: 0;
+}
+
+.navbar-brand {
+	background: transparent;
+}
+
+.navbar-default {
+
+}
+
+.nav-logo {
+	height: 60px;
+}
+
+.navbar-left > a {
+  font-family: 'Nunito', sans-serif;
+  color: #8B939A !important;
+}
+
+.navbar-right {
+	margin-top: 25px;
+}
+
+.navbar-default {
+    box-shadow:none;
+    background:transparent;
+    padding: 10px 20px 40px 20px;
+}
+
+.navbar {
+    background: transparent;
+    margin:0;
+    border:none;
+}
+
+
+/* parent view */
+
+#page-content {
+	padding-top: 0px;
+	background: #EBEFF0;
+}
+
+
+/*chatbox*/
+
+.chatbox {
+	background: #E5EAEB;
+	padding-top: 1%;
+	padding-bottom: 3.33333333%;
+	margin-bottom: 0px;
+}
+
+.chatbox-header {
+	background: #fff;
+	position: relative;
+  color: #a8a8a8;
+  padding-top: 10px;
+  border-bottom: none;
+}
+
+.chatbox-header-avatar {
+	float: left;
+	height: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 50%;
+}
+
+.chatbox-header-username {
+	color: #a8a8a8;
+	font-family: 'Open-Sans', sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.row.chatbox-content {
+  background: #fff;
+  height: 370px;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-top: 2px solid #E5EAEB;
+}
+
+.chatbox-message-container {
+	float: left;
+}
+
+.chatbox-message-timestamp {
+  width: 12.666667%;
+  padding-right: 0;
+}
+
+.chatbox-message-timestamp p {
+	font-size: 10px;
+  color: #aaa;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.chatbox-message-content {
+  width: 87.33333%;
+  padding-left: 0;
+}
+
+.chatbox-message {
+	font-size: 15px;
+	color: #B976DA;
+}
+
+p.chatbox-message {
+	float: left;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+p.chatbox-message span {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-left: 10px;
+	color: #0c0c0c;
+	font-weight: lighter;
+}
+
+
+
+
+
+input.message-input {
+	border: 2px solid #E5EAEB;
+	border-right-color: #fff;  
+	border-bottom: none;
+	background-image: none;
+	height: 40px;
+	width: 100%;
+	outline: none;
+	padding: 0 10px;
+}
+
+.chatbox-input-container {
+  position: relative;
+  bottom: 0;
+  background: #fff;
+  padding: 0;
+  text-align: center;
+}
+
+.chatbox-input-container a {
+  border-top: 2px solid #E5EAEB;
+  border-radius: 0;
+  margin: 0;
+  float: left;
+  width: 10%;
+  padding-top: 10px;
+}
+
+.chatbox-input-container form {
+  float: right;
+  width: 90%;
+}
+
+.is-typing-container {
+  background: #fff;
+}
+
+.typetypetype {
+/*  display: none;*/
+  font: 10px;
+  font-style: italic;
+  color: #C4C4C4;
+  display: block;
+  height: 25px;
+  background: #fff;
+  padding-left: 65px;
+}
+
+
+
+
+/*chat-directory*/
+
+.chat-directory {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 87vh;
+	background: #fff;
+	border-right: 2px solid #ddd;
+	border-bottom: 2px solid #ddd;
+}
+
+.chat-search {
+
+}
+
+.chat-search-input {
+  
+}
+
+input.form-control.chat-search-input:focus {
+	border-color: #fff;
+	border: 1px solid #ccc;
+}
+
+.public-rooms-container {
+
+}
+
+.private-rooms-container {
+
+}
+
+.direct-messages-container {
+
+}
+
+.chat-directory-items {
+
+}
+
+.chat-directory-item {
+  
+}
+
+label.badge.unread-messages {
+	margin-top: 5px;
+	background: #B976DA;
+}
+
+.row.direct-message {
+	cursor: pointer;
+}
+
+.row.direct-message:hover {
+	background: #ccc;
+}
+
+.row.direct-message {
+	background: #fff;
+	border-bottom: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+	line-height: 1.2em;
+}
+
+.direct-message-username {
+	line-height: 2em;
+	float: right;
+}
+
+
+
+/*user-directory*/
+
+.user-directory {
+  background: #fff;
+  height: 88vh;
+  overflow-y: auto;
+  border-left: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+
+.user-directory-username {
+  float: left;
+}
+
+.offline-users {
+
+}
+
+.row.user-offline {
+
+}
+
+
+.online-users {
+
+}
+
+.row.user-online {
+	color: #329932;
+}
+
+
+.idle-users {
+
+}
+
+
+.user-directory-itemEEE {
+
+}
+
+
+
+
+
+
+
+@media (max-width: 1050px) {
+  
+  .users-list {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
