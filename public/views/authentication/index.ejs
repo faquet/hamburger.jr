@@ -3,12 +3,14 @@
 <head>
 
   <% include ../dependencies/head %>
-
+	<link rel="stylesheet" type='text/css' href="../assets/css/authentication.css">
 </head>
-<body>   
+<body style="background: #FF0000">   
   
   <% include ./_navbar %>
-  <% include ./_form %>
+  <div class="container-fluid">
+  	<% include ./_form %>
+  </div>
   <% include ./templates/register-form %>
   <% include ../dependencies/scripts %>
 </body>
