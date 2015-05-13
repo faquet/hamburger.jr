@@ -11,6 +11,7 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 
 app.use('/', routes);
+app.use('/chat', routes);
 
 var port = process.env.PORT || 3000;
 

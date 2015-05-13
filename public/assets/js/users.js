@@ -35,6 +35,7 @@ function loginWithPassword(email, password) {
 	    $('.error-login').html("Login Failed!", error);
 	  } else {
 	    $('.error-login').html("Authenticated successfully with payload: " + authData);
+	    window.location = '/chat'
 	  }
 	});
 }
