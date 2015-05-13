@@ -9,9 +9,12 @@
   <% include ./_header %>
   <div class="container-fluid">
   	<div class="row">
-			<% include ./_content-left %>			
-			<% include ./_content-middle %>
-			<% include ./_content-right %>
+  		<% include ./_bar %>
+  		<div class="page-content">
+				<% include ./_content-left %>			
+				<% include ./_content-middle %>
+				<% include ./_content-right %>
+			</div>
   	</div>
   
   <% include ../dependencies/scripts %>

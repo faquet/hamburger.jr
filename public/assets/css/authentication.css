@@ -5,13 +5,44 @@
 .container-header {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background: #fff;
+	background: #FFD200;
 	color: #000;
 }
-.nav-header {
-	background: #FFD200;
-	color: #FF0000;
-	padding-top: 0;
+
+.page-content {
+	padding-top: 30px;
+}
+
+.middle {
+	padding: 0;
+}
+
+.bar {
+	padding: 15px;
+	border-bottom: 1px solid #FFD200;
+}
+
+ul.grid li {
+	display: inline-block;
+}
+
+.grid {
+	padding: 0;
+}
+
+.grid li {
+	text-align: center;
+	list-style-type: none;
+	width: 49.5%;
+	border-radius: 4%;
+	background: #fff;
+	margin-bottom: 5px;
+}
+
+.grid li i {
+	color: #FFD200;
+	font-size: 8em;
+	line-height: 2em;
 }
 
 .form-control {
