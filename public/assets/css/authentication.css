@@ -17,6 +17,11 @@
 	padding: 0;
 }
 
+.section {
+	background: #fff;
+	color: #FF0000;
+}
+
 .bar {
 	padding: 15px;
 	border-bottom: 1px solid #FFD200;
