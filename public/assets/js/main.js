@@ -1,0 +1,1 @@
+var URL = new Firebase('https://hamburger-jr.firebaseio.com/');
