@@ -1,36 +1,41 @@
-
-.container {
+.container, .container-fluid {
 	color: #fff;
 }
 
+.container-header {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #fff;
+	color: #000;
+}
 .nav-header {
 	background: #FFD200;
 	color: #FF0000;
 	padding-top: 0;
 }
 
-.input-lg {
+.form-control {
 	background-color: #FF0000;
 	color: #fff;
 	border-radius: 2px;
 }
 
-.input-lg:focus {
+.form-control:focus {
 	background-color: #FFD200;
 	color: #FF0000;
 }
 
-.input-lg::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder {
     color: #fff;
 }
-.input-lg:-moz-placeholder {
+.form-control:-moz-placeholder {
    color: #fff;
    opacity: 1;
 }
-.input-lg::-moz-placeholder {
+.form-control::-moz-placeholder {
    color: #fff;
    opacity: 1;
 }
-.input-lg:-ms-input-placeholder {
+.form-control:-ms-input-placeholder {
    color: #fff;
 }

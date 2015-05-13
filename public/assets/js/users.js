@@ -5,6 +5,9 @@ var usersRef = ref.child("users");
 username = $('.username').val();
 fullName = $('.full-name').val();
 
-usersRef.child(username).set({
-  name: fullName
-});
+
+function createUser() {
+	usersRef.child(username).set({
+  	name: fullName
+	});
+}

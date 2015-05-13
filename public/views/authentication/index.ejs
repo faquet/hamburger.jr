@@ -6,8 +6,13 @@
 </head>
 <body style="background: #FF0000">   
   
-  <% include ./_navbar %>
-  <% include ./_form %>
+  <% include ./_header %>
+  <div class="container-fluid">
+  	<div class="row">
+			<% include ./_content-left %>			
+			<% include ./_content-middle %>
+			<% include ./_content-right %>
+  	</div>
   
   <% include ../dependencies/scripts %>
 </body>
