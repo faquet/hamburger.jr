@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 
-
+/*yellow #FFD200*/
 
 /*nav*/
 
@@ -9,7 +9,7 @@
 }
 
 .nav-header {
-	background: #329932;
+	background: #FF0000;
 	color: #fff;
 	padding-top: 0;
 }
@@ -293,7 +293,7 @@ label.badge.unread-messages {
 }
 
 .row.user-online {
-	color: #329932;
+	color: #FF0000;
 }
 
 
