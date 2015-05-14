@@ -3,21 +3,19 @@ $(function() {
 	$(document).on('keypress', '.message-input', function(e) {
 		e.preventDefault();
 		if (e.keyCode === 13) {
-			sendMessage();
+			requestUser();
 		}
 	})
 
 
 });
 
-function sendMessage() {
-	requestUser();
+function sendMessage(user) {
 	var $input = $('.message-input').val();
 	var messagesRef = ref.child('messages');
 
-  messageRef.push({
-    sender: '',
+  messagesRef.push({
+    sender: user,
     message: $input
   });
-
 }

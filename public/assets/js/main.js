@@ -12,8 +12,7 @@ messagesRef.on('value', function(snapshot) {
 ref.onAuth(function(authData) {
   if (authData) {
     console.log("Authenticated with uid:", authData.password['email']);
-    var email = authData.password['email'];
-    identifyUser(email);
+
   } else {
     console.log("Client unauthenticated.")
   }
@@ -45,10 +44,6 @@ function syncUser(username) {
 	var userRef = new Firebase(path);
 	userRef.on('value', function(snapshot) {
 		var currentUser = snapshot.val();
-		broadcastUser(username);
+		sendMessage(username);
 	});
 };
-
-function broadcastUser(user) {
-	console.log(user + ' is sending a message');
-}
