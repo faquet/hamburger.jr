@@ -7,7 +7,6 @@ $(function() {
 		}
 	})
 
-
 });
 
 
@@ -24,14 +23,9 @@ function sendMessage(user) {
   	if (error) {
   		console.log(error) 
   	} else {
-  		console.log('new message created');
   		$('#input-chatbox').val('');
   	}
   });
-  data.once('value', function(data) {
-  	var model = data.val();
-  	$('.chatbox-content').append(template(model));
-  })
 }
 
 messagesRef.limitToLast(15).on('child_added', function(snap) {
