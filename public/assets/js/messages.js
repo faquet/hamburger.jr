@@ -1,9 +1,10 @@
 $(function() {
 
-	$(document).on('keypress', '.message-input', function(e) {
-		e.preventDefault();
+	$(document).on('keypress', '#input-chatbox', function(e) {
 		if (e.keyCode === 13) {
-			requestUser();
+		e.preventDefault();
+		console.log('we got message!');
+		requestUser();
 		}
 	})
 
@@ -11,11 +12,12 @@ $(function() {
 });
 
 function sendMessage(user) {
-	var $input = $('.message-input').val();
+	var $input = $('#input-chatbox').val();
 	var messagesRef = ref.child('messages');
 
   messagesRef.push({
     sender: user,
     message: $input
-  });
+  }, onComplete);
+
 }

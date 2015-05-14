@@ -11,23 +11,21 @@ messagesRef.on('value', function(snapshot) {
 
 ref.onAuth(function(authData) {
   if (authData) {
-    console.log("Authenticated with uid:", authData.password['email']);
-
+    console.log("Authenticated with uid:", authData);
   } else {
     console.log("Client unauthenticated.")
   }
 });
 
 function requestUser() {
-	ref.getAuth(function(authData) {
+	var authData = ref.getAuth()
 	  if (authData) {
 	    console.log("Authenticated with uid:", authData.password['email']);
 	    var email = authData.password['email'];
 	    identifyUser(email);
 	  } else {
 	    console.log("Client unauthenticated.")
-	  }
-	});	
+	  }	
 }
 
 function identifyUser(email) {
