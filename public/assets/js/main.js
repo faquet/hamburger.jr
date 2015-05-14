@@ -30,7 +30,7 @@ function requestUser() {
 
 function identifyUser(email) {
 	usersRef.orderByChild("email").on("child_added", function(snapshot) {
-  	if (email === snapshot.val().email) {
+  	if (email === snapshot.val().email.toLowerCase()) {
   		console.log(email + ' is logged in');
   		syncUser(snapshot.key());
   	} 
