@@ -3,10 +3,9 @@ var ref = new Firebase('https://hamburger-jr.firebaseio.com/');
 var usersRef = ref.child("users");
 
 
-
 $(function() {
 
-	$('.btn-register').on('click', function(e) {
+	$(document).on('click', '.btn-register', function(e) {
 		e.preventDefault();
 		var username = $('.username-register').val();
 		var name 		 = $('.name-register').val();
@@ -16,7 +15,7 @@ $(function() {
 		createUserData(username, name, email);
 	});
 
-	$('.btn-login').on('click', function(e) {
+	$(document).on('click', '.btn-login', function(e) {
 		e.preventDefault();
 		var email 	 = $('.email-login').val();
 		var password = $('.password-login').val();
