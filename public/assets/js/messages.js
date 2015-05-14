@@ -16,10 +16,10 @@ var template = _.template($('#chatbox-message-template').html());
 function sendMessage(user) {
 	var $input = $('#input-chatbox').val();
 	var messagesRef = ref.child('messages');
-	var data = {sender: user, message: $input};
-  messagesRef.push({
+  var data = messagesRef.push({
     sender: user,
-    message: $input
+    message: $input,
+    timestamp: Firebase.ServerValue.TIMESTAMP
   }, function(error) {
   	if (error) {
   		console.log(error) 
@@ -27,7 +27,8 @@ function sendMessage(user) {
   		console.log('new message created');
   	}
   });
-  
-  
-	$('.chatbox-content').append(template(data));
+  data.once('value', function(data) {
+  	var model = data.val();
+  	$('.chatbox-content').append(template(model));
+  })
 }
