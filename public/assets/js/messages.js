@@ -1,20 +1,19 @@
+var messagesRef = ref.child('messages');
+var template = _.template($('#chatbox-message-template').html());
+
 $(function() {
 	
-	$(document).on('keypress', '#input-chatbox', function(e) {
+	$(document).on('keypress', '.message-input', function(e) {
 		if (e.keyCode === 13) {
 			e.preventDefault();
 			requestUser();
 		}
-	})
+	});
 
 });
 
-
-var messagesRef = ref.child('messages');
-var template = _.template($('#chatbox-message-template').html());
-
 function sendMessage(user) {
-	var $input = $('#input-chatbox').val();
+	var $input = $('.message-input').val();
   var data = messagesRef.push({
     sender: user,
     message: $input,
@@ -23,7 +22,7 @@ function sendMessage(user) {
   	if (error) {
   		console.log(error) 
   	} else {
-  		$('#input-chatbox').val('');
+  		$('.message-input').val('');
   	}
   });
 }
