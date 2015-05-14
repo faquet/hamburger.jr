@@ -11,6 +11,8 @@ $(function() {
 
 });
 
+var template = _.template($('#chatbox-message-template').html());
+
 function sendMessage(user) {
 	var $input = $('#input-chatbox').val();
 	var messagesRef = ref.child('messages');
@@ -18,6 +20,13 @@ function sendMessage(user) {
   messagesRef.push({
     sender: user,
     message: $input
-  }, onComplete);
-
+  }, function(error) {
+  	if (error) {
+  		console.log(error) 
+  	} else {
+  		console.log('new message created');
+  	}
+  });
+  var model = {sender: user, message: $input};
+	$('.chatbox-content').append(template(model.toJSON()));
 }
